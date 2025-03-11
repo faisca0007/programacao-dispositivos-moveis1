@@ -1,14 +1,13 @@
-import { View } from "react-native";
+import Flexbox from "./screens/Flexbox";
+import PadraoIOS from "./screens/PadraoIOS";
+import PadraoAndroid from "./screens/PadraoAndroid";
+import PerfilScreen from "./screens/PerfilScreen";
+import GaleriaScreen from "./screens/GaleriaScreen"
 
 function App() {
   return (
-  <View style={{ flex: 1, flexDirection: "column", justifyContent: "space-evenly",  backgroundColor: "red" }}>
-<View style={{ height:50, width:50, backgroundColor: "blue"}}></View>
-<View style={{ height:50, width: 50, backgroundColor: "green"}}></View>
-<View style={{height:50, width: 50, backgroundColor: "yellow"}}></View>
-
-</View>
-);
+    <GaleriaScreen />
+  );
 }
 
 export default App;

@@ -1,4 +1,11 @@
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+  import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  ScrollView,
+  StyleSheet,
+} from "react-native";
 
 function RegistrarScreen() {
   return (
@@ -6,16 +13,23 @@ function RegistrarScreen() {
       <View style={styles.appBar}>
         <Text style={styles.appTitle}>Criar Conta</Text>
       </View>
-      <View style={styles.formRegister}>
-        <TextInput style={styles.input} placeholder="Nome" />
-        <TextInput
-          style={styles.input}
-          placeholder="E-mail"
-          keyboardType="email-address"
-        />
-        <TextInput style={styles.input} placeholder="Senha" secureTextEntry />
-        <Button title="Registrar" />
-      </View>
+      <ScrollView>
+        <View style={styles.formRegister}>
+          <TextInput style={styles.input} placeholder="Nome" />
+          <TextInput
+            style={styles.input}
+            placeholder="E-mail"
+            keyboardType="email-address"
+          />
+          <TextInput style={styles.input} placeholder="Senha" secureTextEntry />
+          <TextInput
+            style={styles.input}
+            placeholder="Confirmar Senha"
+            secureTextEntry
+          />
+          <Button title="Registrar" color="blue" />
+        </View>
+      </ScrollView>
     </View>
   );
 }
@@ -35,6 +49,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   formRegister: {
+    flex: 1,
     paddingHorizontal: 16,
   },
   input: {
@@ -42,7 +57,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "blue",
     borderRadius: 8,
-    marginBottom: 8,
+    marginBottom: 16,
   },
 });
 

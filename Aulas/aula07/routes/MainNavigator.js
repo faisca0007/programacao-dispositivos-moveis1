@@ -1,9 +1,9 @@
-import { createNativeStack } from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "../screens/Login";
 import CriarConta from "../screens/CriarConta";
 import RedefinirSenha from "../screens/RedefinirSenha";
 
-const Stack = createNativeStack();
+const Stack = createNativeStackNavigator();
 
 function MainNavigator() {
   return (

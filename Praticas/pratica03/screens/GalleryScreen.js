@@ -5,31 +5,31 @@ function GalleryScreen() {
     <View style={styles.container}>
       <View style={styles.appBar}>
         <Text style={styles.appTitle}>Galeria de Fotos</Text>
-
       </View>
 
       <View style={styles.grid}>
-      <View style={styles.photo}>
-  <Text>Foto 1</Text>
-</View>
-<View style={styles.photo}>
-  <Text>Foto 2</Text>
-</View>
-<View style={styles.photo}>
-   <Text>Foto 3</Text>
-</View>
-<View style={styles.photo}>
-   <Text>Foto 4</Text>
-</View>
-<View style={styles.photo}>
-   <Text>Foto 5</Text>
-</View>
-<View style={styles.photo}>
-   <Text>Foto 6</Text>
-</View>
-
+        <View style={styles.photo}>
+          <Text>Foto 1</Text>
+        </View>
+        <View style={styles.photo}>
+          <Text>Foto 2</Text>
+        </View>
+        <View style={styles.photo}>
+          <Text>Foto 3</Text>
+        </View>
+        <View style={styles.photo}>
+          <Text>Foto 4</Text>
+        </View>
+        <View style={styles.photo}>
+          <Text>Foto 5</Text>
+        </View>
+        <View style={styles.photo}>
+          <Text>Foto 6</Text>
+        </View>
+      </View>
     </View>
-  );}
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
